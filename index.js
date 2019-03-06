@@ -18,7 +18,7 @@ function currentLine(array){
    for (let i = 0; i < array.length; i++){
      message += `${i + 1}. ${array[i]}, `
    }
-   return message
+   return message.slice(0, -1)
   } else {
     return "The line is currently empty."
   }
